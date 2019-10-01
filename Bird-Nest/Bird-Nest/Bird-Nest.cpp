@@ -41,7 +41,7 @@ int main()
 		cin >> territorys[i].posX >> territorys[i].posY >> territorys[i].size;
 	}
 
-	for (int i = 0; i < birdCount; ++i)
+	for (int i = 0; i < birdCount; ++i) // Set the bird territory fields to 1.
 	{
 		int currentNestX = territorys[i].posX - 1;
 		int currentNestY = territorys[i].posY - 1;
@@ -53,16 +53,25 @@ int main()
 		{
 			for (int k = startTerritoryY; k <= endTerritoryY; k++)
 			{
+				// Here is no indexOutOfRangeException so I did it this vay. :D I came from C# world XD
+				/*try
+				{
+					area[j][k] = 1;
+				}
+				catch (indexOutOfRangeException)
+				{
+						
+				}*/
 				if (j >= 0 && k >= 0 && j < areaSize && k < areaSize)
 				{
 					area[j][k] = 1;
 				}
 			}
 		}
-		area[currentNestX][currentNestY] = 2;
+		area[currentNestX][currentNestY] = 2; // Set the birdnest's position to 2.
 	}
 
-	int emptyFieldCount = 0;
+	int emptyFieldCount = 0; // Count the empty fields.
 	for (int i = 0; i < areaSize; ++i)
 	{
 		for (int j = 0; j < areaSize; ++j)
