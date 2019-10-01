@@ -7,6 +7,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bird-Nest", "Bird-Nest\Bird
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF8B40B3-12C0-4896-8B8C-E60A5641C527}"
 	ProjectSection(SolutionItems) = preProject
+		task(hu).pdf = task(hu).pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{92781CF5-CE82-4DBE-8226-E2F2D7FCA07F}"
+	ProjectSection(SolutionItems) = preProject
+		Test\Out01.txt = Test\Out01.txt
+		Test\Out02.txt = Test\Out02.txt
 		Test01.txt = Test01.txt
 		Test02.txt = Test02.txt
 	EndProjectSection
@@ -30,6 +37,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92781CF5-CE82-4DBE-8226-E2F2D7FCA07F} = {BF8B40B3-12C0-4896-8B8C-E60A5641C527}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10E5D86D-27B1-49A7-AE82-40913CFF4C70}
