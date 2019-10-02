@@ -60,7 +60,7 @@ int main()
 				}
 				catch (indexOutOfRangeException)
 				{
-						
+
 				}*/
 				if (j >= 0 && k >= 0 && j < areaSize && k < areaSize)
 				{
@@ -68,7 +68,10 @@ int main()
 				}
 			}
 		}
-		area[currentNestX][currentNestY] = 2; // Set the birdnest's position to 2.
+		if (currentNestX >= 0 && currentNestY >= 0 && currentNestX < areaSize && currentNestY < areaSize)
+		{
+			area[currentNestX][currentNestY] = 2; // Set the birdnest's position to 2.
+		}
 	}
 
 	int emptyFieldCount = 0; // Count the empty fields.
